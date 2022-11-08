@@ -1,0 +1,22 @@
+.Title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #83c2f5;
+  height: 70rpx;
+  font-size: 40rpx;
+}
+
+.table1{
+  display: flex;
+  justify-content: center;
+  margin-top: 20rpx;
+  height: 300rpx;
+  border-style: solid;
+}
+
+.table_title{
+  position: absolute;
+  margin-top: 10rpx;
+  border-style: solid;
+}

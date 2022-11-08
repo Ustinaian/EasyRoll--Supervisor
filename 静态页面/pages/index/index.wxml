@@ -1,0 +1,6 @@
+<view>
+  <view class="Title">我的点名</view>
+  <view class="table1">
+    <view class="table_title">软件工程A</view>
+  </view>
+</view>
