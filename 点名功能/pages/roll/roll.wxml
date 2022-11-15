@@ -1,0 +1,24 @@
+<view>
+  <view class="Title">我的点名</view>
+  <view class="course">
+    <view class="course_title" bindtap="course_btn">软件工程A</view>
+    <view class="course_info">
+      <view class="location">旗山东</view>
+      <view class="time">1-2节</view>
+    </view>
+  </view>
+  <view class="course">
+    <view class="course_title">计算机操作系统</view>
+    <view class="course_info">
+      <view class="location">旗山东</view>
+      <view class="time">1-2节</view>
+    </view>
+  </view>
+  <popup_roll id='popup_roll'
+    title='点名' 
+    content_leftText=''
+    content_money='' 
+    content_rightText=''  
+    bind:close="_close">
+  </popup_roll>
+</view>

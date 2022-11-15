@@ -1,0 +1,18 @@
+<view class="wx-popup" style="margin:-{{windowHeight/2}}px 0 0 -{{windowWidth/2}}px" hidden="{{flag}}">
+  <view class='popup-container'>
+    <view class="wx-popup-title">{{title}}</view>
+    <!-- <view class="wx-popup-con" >{{content}}</view> -->
+    <view class="wx-popup-con" >
+      <text>{{content_leftText}}</text>
+      <text class="content_money">{{content_money}}</text>
+      <text>{{content_rightText}}</text>
+    </view>
+    <view class="wx-popup-btn">
+      <view class="closeBtn">
+        <view class="close-popup" bindtap='_close'>
+          <view>X</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
