@@ -1,0 +1,43 @@
+.title1{
+  display: flex;
+  background-color: rgb(131, 219, 253);
+}
+
+.title1_1{
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  width: 600rpx;
+  border-style: solid;
+  border-width: 2rpx;
+}
+
+.title1_2{
+  display: flex;
+  height: 80rpx;
+  justify-items: center;
+  width: 200rpx;
+  border-style: solid;
+  border-width: 2rpx;
+}
+
+.msg1{
+  display: flex;
+}
+
+.msg1_1{
+  display: flex;
+  width: 600rpx;
+  height: 100rpx;
+  border-style: solid;
+  border-width: 2rpx;
+}
+
+.msg1_2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200rpx;
+  border-style: solid;
+  border-width: 2rpx;
+}

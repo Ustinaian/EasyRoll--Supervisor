@@ -1,0 +1,32 @@
+.view-con{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30rpx;
+  margin-left: 100rpx;
+  line-height: 100rpx;
+  font-size: 40rpx;
+  padding-bottom: 160rpx;
+}
+
+/* 发布签到按钮 */
+.release-btn{
+  width: 300rpx;
+  background-color: rgb(224, 212, 212);
+}
+
+.release-btn-class{
+  color: rgb(224, 212, 212);
+  background-color: rgb(236, 229, 229);
+}
+
+/* 返回按钮 */
+.back-btn{
+  width: 300rpx;
+  margin-top: 60rpx;
+  background-color: rgb(224, 212, 212);
+}
+
+.back-btn-class{
+  color: rgb(163, 155, 155);
+  background-color: rgb(236, 229, 229);
+}

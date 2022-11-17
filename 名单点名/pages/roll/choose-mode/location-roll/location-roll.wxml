@@ -1,0 +1,13 @@
+<view>
+  <view class="view-con">
+    <view>课程名：{{course.name}}</view>
+    <view>教室：{{course.classroom}}</view>
+    <view>上课时间：{{course.classroom}}</view>
+    <view>周数：{{course.week}}</view>
+    <view>教师：{{course.teacher}}</view>
+    <view>起始时间：</view>
+    <view>结束时间：</view>
+  </view>
+  <button class="release-btn" hover-class="release-btn-class" bindtap="release">发布签到</button>
+  <button class="back-btn" hover-class="back-btn-class" bindtap="back">返回</button>
+</view>

@@ -1,0 +1,12 @@
+
+.view{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+}
+
+.btn{
+  display: flex;
+  height: 100rpx;
+}

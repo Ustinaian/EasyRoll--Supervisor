@@ -1,0 +1,4 @@
+<view class="view">
+  <button class="btn" bindtap="Login">登录</button>
+  <button class="btn" bindtap="enter">进入易点名</button>
+</view>

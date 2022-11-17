@@ -1,0 +1,15 @@
+<view>
+  <view class="namelist">
+    <view wx:if="{{flag==1}}" bindtouchstart="startEvent" bindtouchend="endEvent" class="list1">
+      <view>0320002603</view>
+      <view>王鑫鑫</view>
+      <view>Wang XinXin</view>
+    </view>
+    <view wx:if="{{flag==1}}" class="split-line"></view>
+    <view bindtouchstart="startEvent" bindtouchend="endEvent" class="list1">
+      <view>0320002603</view>
+      <view>王</view>
+      <view>Wang XinXin</view>
+    </view>
+  </view>
+</view>
