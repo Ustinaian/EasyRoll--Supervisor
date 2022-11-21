@@ -1,0 +1,68 @@
+<view>
+  <view class="Title">我的点名</view>
+  <view wx:if="{{flag==200}}" class="course">
+    <view class="course_title" bindtap="course_btn">{{course[0].name}}</view>
+    <view class="course_info">
+      <view class="classroom">{{course[0].classroom}}</view>
+      <view class="time">{{course[0].time}}</view>
+    </view>
+  </view>
+  <view class="course">
+    <view class="course_title" bindtap="course_btn">{{course[1].name}}</view>
+    <view class="course_info">
+      <view class="classroom">{{course[1].classroom}}</view>
+      <view class="time">{{course[1].time}}</view>
+    </view>
+  </view>
+  <view class="course">
+    <view class="course_title" bindtap="course_btn">数据库</view>
+    <view class="course_info">
+      <view class="classroom">旗山东3-306</view>
+      <view class="time">{{course[0].time}}</view>
+    </view>
+  </view>
+  <view class="course">
+    <view class="course_title" bindtap="course_btn">人工智能</view>
+    <view class="course_info">
+      <view class="classroom">旗山东3-307</view>
+      <view class="time">{{course[1].time}}</view>
+    </view>
+  </view>
+  <view class="course">
+    <view class="course_title" bindtap="course_btn">Java语言程序设计</view>
+    <view class="course_info">
+      <view class="classroom">旗山东3-306</view>
+      <view class="time">{{course[0].time}}</view>
+    </view>
+  </view>
+  <view class="course">
+    <view class="course_title" bindtap="course_btn">接口实验</view>
+    <view class="course_info">
+      <view class="classroom">{{course[1].classroom}}</view>
+      <view class="time">{{course[1].time}}</view>
+    </view>
+  </view>
+  <view class="course">
+    <view class="course_title" bindtap="course_btn">{{course[0].name}}</view>
+    <view class="course_info">
+      <view class="classroom">{{course[0].classroom}}</view>
+      <view class="time">{{course[0].time}}</view>
+    </view>
+  </view>
+  <view class="course">
+    <view class="course_title" bindtap="course_btn">{{course[1].name}}</view>
+    <view class="course_info">
+      <view class="classroom">{{course[1].classroom}}</view>
+      <view class="time">{{course[1].time}}</view>
+    </view>
+  </view>
+  <popup_roll id='popup_roll'
+    title='点名' 
+    name='{{course[0].name}}'
+    classroom='{{course[0].classroom}}'
+    teacher='教师：{{course[0].teacher}}'
+    time='节数：{{course[0].time}}'
+    week='周数；{{course[0].week}}'
+    bind:close="_close">
+  </popup_roll>
+</view>
