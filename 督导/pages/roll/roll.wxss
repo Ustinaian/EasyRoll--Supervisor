@@ -1,0 +1,68 @@
+.Title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0,107,255);
+  /* background: linear-gradient(to right, rgb(0,217,252) 0%, rgb(0,168,253)  100%); */
+  color: white;
+  height: 70rpx;
+  font-size: 40rpx;
+}
+
+.course{
+  display: flex;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  width: 700rpx;
+  height: 300rpx;
+  border-style: solid;
+  justify-content: center;
+  border-width: 2rpx;
+  border-radius: 50rpx;
+}
+
+.course_title{
+  display: flex;
+  position: absolute;
+  margin-top: 30rpx;
+  justify-content: center;
+  width: 630rpx;
+  height: 50rpx;
+  border-width: 2rpx;
+  color: rgb(255, 242, 242);
+  background-color: rgb(89,159,255);
+}
+
+.course_info{
+  display: flex;
+  margin-top: 120rpx;
+  width: 630rpx;
+}
+
+.classroom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30rpx;
+  height: 100rpx;
+  width: 250rpx;
+  font-size: 30rpx;
+  color: rgb(0,107,255);
+  border-style: solid;
+  border-width: 2rpx;
+  background-color: white
+}
+
+.time{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-left: 375rpx;
+  height: 100rpx;
+  width: 250rpx;
+  border-width: 2rpx;
+  border-style: solid;
+  color: rgb(0,107,255);
+}
+

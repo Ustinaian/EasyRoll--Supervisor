@@ -1,0 +1,13 @@
+.view{
+  display: flex;
+  font-size: 70rpx;
+  justify-content: center;
+  margin-top: 250rpx;
+}
+
+.btn{
+  margin-top: 500rpx;
+  width: 300rpx;
+  background-color: rgb(236, 229, 229);
+  border-radius: 200rpx;
+}
