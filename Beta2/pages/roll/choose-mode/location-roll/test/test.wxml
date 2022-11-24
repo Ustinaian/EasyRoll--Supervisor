@@ -1,0 +1,4 @@
+<view style="height: 100%;">
+  <view class="view">成功发布定位签到</view>
+  <button class="btn" bindtap="btn">返回</button>
+</view>

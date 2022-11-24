@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/roll/roll",
+    "pages/logs/logs",
+    "pages/message/message",
+    "pages/mine/mine",
+    "pages/roll/choose-mode/choose-mode",
+    "pages/roll/choose-mode/location-roll/location-roll",
+    "pages/roll/choose-mode/namelist-roll/namelist-roll",
+    "pages/roll/choose-mode/location-roll/test/test",
+    "pages/login/auth",
+    "pages/register/register",
+    "pages/roll/add-course/add-course",
+    "pages/roll/add-course/choose-time/choose-time"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "易点名",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#000000",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/roll/roll",
+        "iconPath": "images/book.png",
+        "selectedIconPath": "images/book_selected.png",
+        "text": "点名"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "iconPath": "images/message.png",
+        "selectedIconPath": "images/message_selected.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my_selected.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "popup_roll": "/components/popup_roll/popup_roll",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-picker": "@vant/weapp/picker/index",
+    "van-slider": "@vant/weapp/slider/index",
+    "van-swipe-cell": "@vant/weapp/swipe-cell/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-uploader": "@vant/weapp/uploader/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index"
+  }
+}
