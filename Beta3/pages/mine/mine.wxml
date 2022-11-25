@@ -1,0 +1,43 @@
+<view>
+  <!-- <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName" style="font-size: 50rpx;"></open-data>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view> -->
+  <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+    <image class="avatar" src="{{avatarUrl}}"></image>
+  </button> 
+  <input type="nickname" class="weui-input" placeholder="请输入昵称"/>
+
+  <!-- 登录成功的样式 -->
+  <view wx:if="{{login_flag==1}}">
+    <view style="margin-top: 300rpx; font-size: 50rpx;">意见反馈/帮助</view>
+    <view style="margin-top: 30rpx; font-size: 50rpx;">设置</view>
+  </view>
+  <!-- 未登录样式 -->
+  <view wx:else="{{login_flag==0}}">
+    <view class="btn-container">
+      <van-row>
+        <van-col>
+          <van-button
+            bind:click="Login"
+            custom-class="btn1"
+            round
+            color="rgb(0,107,255)"
+          >
+          登录/注册
+          </van-button>
+        </van-col>
+      </van-row>
+    </view>
+  </view>
+</view>
+<van-toast id="van-toast" />
+<van-dialog custom-class="dialog" id="van-dialog" />

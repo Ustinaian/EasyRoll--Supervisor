@@ -1,0 +1,113 @@
+<view class="cell title">
+	督导队员
+</view>
+<van-toast id="van-toast" />
+<view>
+	<view class="info-container">
+		<!-- 学号 -->
+		<van-cell-group>
+			<van-field
+				required
+				value="{{ id }}"
+				label="学号"
+				placeholder="请输入学号"
+				bind:change="onChange_id"
+				input-align="right"
+				label-class="label"
+			/>
+		</van-cell-group>
+		<!-- 姓名 -->
+		<van-cell-group>
+			<van-field
+				required
+				value="{{ name }}"
+				label="姓名"
+				placeholder="请输入姓名"
+				bind:change="onChange_name"
+				input-align="right"
+				label-class="label"
+			/>
+		</van-cell-group>
+		<!-- 学院 -->
+		<van-cell-group>
+			<van-cell
+			required
+			title="学院"
+			bind:click="showPopup_departmentName"
+			value="{{departmentName}}"
+			is-link
+			title-class="label"
+			url="../department/department"
+			/>
+		</van-cell-group>
+		<!-- 专业 -->
+		<van-cell-group>
+			<van-cell
+			required
+			title="专业"
+			bind:click="showPopup_majorName"
+			value="{{majorName}}"
+			is-link
+			title-class="label"
+			url="../major/major"
+			/>
+		</van-cell-group>
+		<!-- 年级 -->
+		<van-cell-group>
+			<van-cell
+			required
+			title="年级" bind:click="showPopup_grade" value="{{grade}}" is-link title-class="label"/>
+			<van-popup show="{{ show_grade }}" position="bottom" custom-style="height: 50%;" bind:close="onClose">
+				<van-picker
+				show-toolbar
+				columns="{{ grades }}"
+				bind:cancel="cancel_grade"
+				bind:confirm="confirm_grade"
+				bind:change="onChange_grade"
+				/>
+			</van-popup>
+		</van-cell-group>
+		<!-- 班级 -->
+		<van-cell-group>
+			<van-cell
+			required
+			title="班级" bind:click="showPopup_classNo" value="{{classNo}}" is-link title-class="label"/>
+			<van-popup show="{{ show_classNo }}" position="bottom" custom-style="height: 50%;" bind:close="onClose">
+				<van-picker show-toolbar columns="{{ classes }}" bind:cancel="cancel_classNo" bind:confirm="confirm_classNo" bind:change="onChange_classNo" />
+			</van-popup>
+		</van-cell-group>
+
+
+		<view class="btn-container">
+			<van-row>
+				<van-col>
+					<van-button
+						bind:click="register"
+						custom-class="btn1"
+						round
+						color="rgb(0,107,255)"
+					>
+					注册
+					</van-button>
+				</van-col>
+			</van-row>
+		</view>
+		<view class="btn-container">
+			<van-row>
+				<van-col>
+					<van-button
+						bind:click="cancel"
+						custom-class="btn2"
+						round
+						style="width: 100px;"
+						plain
+						color="rgb(0,107,255)"
+					>
+					取消
+					</van-button>
+				</van-col>
+			</van-row>
+		</view>
+	</view>
+	<van-toast id="van-toast" />
+</view>
