@@ -1,0 +1,103 @@
+<van-toast id="van-toast" />
+<view>
+	<view class="title">
+		请输入课程相关信息
+	</view>
+	<view class="info-container">
+		<van-cell-group>
+			<van-field
+				value="{{ name }}"
+				label="课程名称"
+				placeholder="请输入课程名称"
+				bind:change="onChange_name"
+				input-align="right"
+				label-class="label"
+			/>
+		</van-cell-group>
+		<van-cell-group>
+			<van-field
+				value="{{ professorName }}"
+				label="教师名称"
+				placeholder="请输入教师名称"
+				bind:change="onChange_professorName"
+				input-align="right"
+				label-class="label"
+			/>
+		</van-cell-group>
+		<van-cell-group>
+			<van-field
+				value="{{ classroomNo }}"
+				label="教室编号"
+				placeholder="请输入教室编号"
+				bind:change="onChange_classroomNo"
+				input-align="right"
+				label-class="label"
+			/>
+		</van-cell-group>
+		<van-cell-group>
+			<van-cell title="开课周数" bind:click="showPopup_startweek" value="{{startWeek}}" is-link title-class="label"/>
+			<van-popup show="{{ show_startweek }}" position="bottom" custom-style="height: 50%;" bind:close="onClose">
+				<van-picker show-toolbar columns="{{ weeks }}" bind:cancel="cancel_startWeek" bind:confirm="confirm_startWeek" bind:change="onChange_startWeek" />
+			</van-popup>
+		</van-cell-group>
+		<van-cell-group>
+			<van-cell title="结课周数" bind:click="showPopup_endweek" value="{{endWeek}}" is-link title-class="label"/>
+			<van-popup show="{{ show_endweek }}" position="bottom" custom-style="height: 50%;" bind:close="onClose">
+				<van-picker show-toolbar columns="{{ weeks }}" bind:cancel="cancel_endWeek" bind:confirm="confirm_endWeek" bind:change="onChange_endWeek" />
+			</van-popup>
+		</van-cell-group>
+		<van-cell-group>
+			<van-cell title="授课年级" bind:click="showPopup_grade" value="{{grade}}" is-link title-class="label"/>
+			<van-popup show="{{ show_grade }}" position="bottom" custom-style="height: 50%;" bind:close="onClose">
+				<van-picker show-toolbar columns="{{ grades }}" bind:cancel="cancel_grade" bind:confirm="confirm_grade" bind:change="onChange_grade" />
+			</van-popup>
+		</van-cell-group>
+		<van-cell-group>
+			<van-cell title="上课时间" link-type="navigateTo" url="./choose-time/choose-time" is-link title-class="label"/>
+		</van-cell-group>
+		<van-row>
+			<van-cell-group>
+			<van-col>
+				<van-cell title="点名名单" title-class="label"/>
+			</van-col>
+			<van-col custom-class="namelist">
+				<van-uploader accept="all">
+					<van-button icon="add-o" color="rgb(0,107,255)">导入名单</van-button>
+				</van-uploader>
+			</van-col>
+			</van-cell-group>
+		</van-row>
+		<view class="btn-container">
+			<van-row>
+				<van-col>
+					<van-button
+						bind:click="confirm"
+						custom-class="btn1"
+						round
+						color="rgb(0,107,255)"
+					>
+					完成添加
+					</van-button>
+				</van-col>
+			</van-row>
+		</view>
+		<view class="btn-container">
+			<van-row>
+				<van-col>
+					<van-button
+						bind:click="cancel"
+						custom-class="btn2"
+						round
+						style="width: 100px;"
+						plain
+						color="rgb(0,107,255)"
+					>
+					取消
+					</van-button>
+				</van-col>
+			</van-row>
+		</view>
+		
+	</view>
+
+</view>

@@ -1,0 +1,25 @@
+<view>
+  <view class="Title">我的点名</view>
+  <view wx:for="{{course}}" wx:for-item="item" wx:for-index="index" wx:key="id" class="course" bindtap="course_btn">
+    <view class="course_title">{{item.name}}</view>
+      <view class="course_info">
+        <view class="classroom">{{item.classroomNo}}</view>
+        <view class="time">{{item.period}}</view>
+      </view>
+  </view>
+</view>
+<van-dialog
+  show="{{show2}}"
+  id="van-dialog"
+  show-confirm-button
+  confirm-button-text="开始点名"
+  show-cancel-button
+  message=""
+  bind:confirm="confirm"
+  confirm-button-color="black"
+  cancel-button-color="black"
+>
+</van-dialog>
+<view class="btns">
+  <van-icon bind:click="change_course" name="add-o" size="50px" />
+</view>

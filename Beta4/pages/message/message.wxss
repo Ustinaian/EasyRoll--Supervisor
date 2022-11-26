@@ -1,0 +1,9 @@
+
+
+page{
+  background-color: rgb(231, 231, 231);
+}
+
+.cell-container{
+  margin-top: 100rpx;
+}

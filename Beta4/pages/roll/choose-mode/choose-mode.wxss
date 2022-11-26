@@ -1,0 +1,59 @@
+.view{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: rgb(165, 159, 159); */
+}
+
+.name{
+  display: flex;
+  margin-top: 120rpx;
+  font-size: 80rpx;
+}
+
+.location{
+  display: flex;
+  margin-top: 30rpx;
+  font-size: 50rpx;
+}
+
+.teacher{
+  display: flex;
+  margin-top: 30rpx;
+  font-size: 50rpx;
+}
+
+/* 名单签到按钮 */
+.list-roll-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 130rpx;
+  width: 250rpx;
+  height: 250rpx;
+  border-radius: 50%;
+  background-color: rgb(224, 212, 212);
+}
+
+.list-roll-btn-class{
+  color: rgb(163, 155, 155);
+  background-color: rgb(236, 229, 229);
+}
+
+/* 定位签到按钮 */
+.location-roll-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100rpx;
+  width: 250rpx;
+  height: 250rpx;
+  border-radius: 50%;
+  background-color: rgb(224, 212, 212);
+}
+
+.location-roll-btn-class{
+  color: rgb(163, 155, 155);
+  background-color: rgb(236, 229, 229);
+}

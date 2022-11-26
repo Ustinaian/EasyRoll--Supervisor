@@ -1,0 +1,7 @@
+<view class="view">
+  <view class="name">{{course[0].name}}</view>
+  <view class="location">{{course[0].classroom}}</view>
+  <view class="teacher">{{course[0].teacher}}</view>
+  <button class="list-roll-btn" hover-class="list-roll-btn-class" bindtap="list_roll">名单点名</button>
+  <button class="location-roll-btn" hover-class="location-roll-btn-class" bindtap="location_roll">定位点名</button>
+</view>
