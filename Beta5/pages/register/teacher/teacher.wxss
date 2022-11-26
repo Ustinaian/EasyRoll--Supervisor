@@ -1,0 +1,40 @@
+.cell{
+	margin-top: 30rpx;
+}
+
+.title{
+	display: flex;
+	height: 100rpx;
+	justify-content: center;
+	align-items: center;
+	font-size: 50rpx;
+}
+
+.info-container{
+	margin-top: 60rpx;
+}
+
+.btn-container{
+	display: flex;
+	justify-content: center;
+}
+
+.btn1{
+	margin-top: 270rpx;
+	width: 200px;
+}
+
+.btn2{
+	margin-top: 20rpx;
+	width: 200px;
+}
+
+.label{
+	font-size: large;
+	height: 37px;
+}
+
+.namelist{
+	display: flex;
+	margin-left:320rpx;
+}
