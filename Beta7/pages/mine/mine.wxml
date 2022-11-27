@@ -1,0 +1,135 @@
+<view>
+  <!-- <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName" style="font-size: 50rpx;"></open-data>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view> -->
+  
+
+  <!-- 登录成功的样式 -->
+  <view wx:if="{{login_flag==1}}">
+    <!-- 头像 -->
+    <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+      <image mode="aspectFill" class="avatar" src="{{avatarUrl}}"></image>
+    </button> 
+    <!-- 昵称 -->
+    <van-cell-group>
+      <van-cell
+      title="昵称"
+      clickable
+      url="./personal_info/personal_info"
+      value="{{nickname}}"
+      value-class="value"
+      >
+      </van-cell>
+    </van-cell-group>
+    <!-- 姓名 -->
+    <van-cell-group>
+      <van-cell
+      title="姓名"
+      value="{{name}}"
+      value-class="value"
+      >
+      </van-cell>
+    </van-cell-group>
+    <!-- 职工号/学号 -->
+    <van-cell-group>
+      <van-cell wx:if="{{role>=2}}"
+      title="职工号"
+      value="{{id}}"
+      value-class="value"
+      >
+      </van-cell>
+      <van-cell wx:else="{{role==1}}"
+      title="学号"
+      value="{{id}}"
+      value-class="value"
+      >
+      </van-cell>
+    </van-cell-group>
+    <!-- 学院 -->
+    <van-cell-group>
+      <van-cell
+      title="学院"
+      center
+      value="{{departmentName}}"
+      value-class="value"
+      label-class="label"
+      >
+      </van-cell>
+    </van-cell-group>
+    <!-- 当前周数 -->
+    <van-cell-group>
+      <van-cell
+      title="当前周数"
+      value="{{currentWeek}}"
+      value-class="value"
+      >
+      </van-cell>
+    </van-cell-group>
+    <!-- 主页相关功能 -->
+    <view class="function">
+      <!-- 历史点名 -->
+      <van-cell-group>
+        <van-cell
+        title="我的历史点名"
+        bind:click=""
+        is-link
+        title-class=""
+        url="./history/history"
+        />
+      </van-cell-group>
+      <!-- 意见反馈/帮助 -->
+      <van-cell-group>
+        <van-cell
+        title="意见反馈/帮助"
+        bind:click=""
+        is-link
+        title-class=""
+        url="./help/help"
+        />
+      </van-cell-group>
+      <!-- 设置 -->
+      <van-cell-group>
+        <van-cell
+        title="设置"
+        bind:click=""
+        is-link
+        title-class=""
+        url="./settings/settings"
+        />
+      </van-cell-group>
+    </view>
+    <!-- <view style="margin-top: 300rpx; font-size: 50rpx;">意见反馈/帮助</view>
+    <view style="margin-top: 30rpx; font-size: 50rpx;">设置</view> -->
+  </view>
+  <!-- 未登录样式 -->
+  <view wx:else="{{login_flag==0}}">
+    <view class="img-view">
+      <image class="img" src="/images/Logo.png" mode="aspectFit"></image>
+    </view>
+    <view class="btn-container">
+      <van-row>
+        <van-col>
+          <van-button
+            bind:click="Login"
+            custom-class="btn1"
+            round
+            color="rgb(26,141,193)"
+          >
+          登录/注册
+          </van-button>
+        </van-col>
+      </van-row>
+    </view>
+  </view>
+</view>
+<van-toast id="van-toast" />
+<van-dialog custom-class="dialog" id="van-dialog" />
