@@ -1,0 +1,10 @@
+<view class="view">
+  <view class="img-view">
+    <image class="img" src="/images/Logo.png" mode="aspectFit"></image>
+  </view>
+  <view class="title">请先授权登录</view>
+  <view class="btn-view">
+    <button class="btn" hover-class="btn-class" bindtap="Login">登录</button>
+    <button class="btn2" hover-class="btn2-class" bindtap="Register">注册</button>
+  </view>
+</view>

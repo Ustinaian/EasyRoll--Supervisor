@@ -1,0 +1,49 @@
+.title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30rpx;
+	font-size: 50rpx;
+}
+
+.info-container{
+	margin-top: 60rpx;
+}
+
+.btn-container{
+	display: flex;
+	justify-content: center;
+}
+
+.btn1{
+	margin-top: 70rpx;
+	width: 200px;
+}
+
+.btn2{
+	margin-top: 20rpx;
+	width: 200px;
+}
+
+.label{
+	font-size: large;
+	height: 37px;
+}
+
+.namelist{
+	display: flex;
+	justify-content: center;
+}
+
+.file{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 40rpx;
+	height: 90rpx;
+}
+
+.img{
+	width: 50rpx;
+	height: 50rpx;
+}
