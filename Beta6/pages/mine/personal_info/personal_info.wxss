@@ -1,0 +1,14 @@
+.btn-container{
+	display: flex;
+	justify-content: center;
+}
+
+.btn1{
+	display: flex;
+	margin-top: 750rpx;
+	width: 200px;
+}
+
+.info-container{
+	margin-top: 50rpx;
+}
