@@ -1,0 +1,25 @@
+/* 标题样式 */
+.title{
+	display: flex;
+	justify-content: center;
+	font-size: 50rpx;
+	margin-top: 50rpx;
+}
+
+.title-container{
+	margin-top: 100rpx;
+}
+
+/* 每个cell的样式 */
+.cell{
+	background-color: rgb(0,107,255);
+}
+
+.label{
+	display: flex;
+	font-size: 40rpx;
+	height: 100rpx;
+	align-items: center;
+}
+
+
