@@ -1,0 +1,17 @@
+<view>
+  <view class="img-view">
+    <image class="img" src="/images/Logo.png" mode="aspectFit"></image>
+  </view>
+  <view class="title">您正在登录易点名...</view>
+  <view class="btn-container">
+    <van-button
+      bind:click="Login"
+      custom-class="btn1"
+      round
+      color="rgb(23,140,193)"
+    >
+    授权登录
+    </van-button>
+  </view>
+</view>
+<van-toast id="van-toast" />

@@ -1,0 +1,61 @@
+<view>
+  <van-tabs active="{{ active }}" bind:change="onChange">
+    <van-tab title="未点">
+      <view>
+        <view class="namelist">
+          <view wx:if="{{flag<1}}">
+            <view bindtouchstart="startEvent" bindtouchend="endEvent" class="list1">
+              <view>0320002603</view>
+              <view>王鑫鑫</view>
+              <view>Wang XinXin</view>
+            </view>
+            <view class="split-line"></view>
+          </view>
+          <view wx:if="{{flag<2}}">
+            <view bindtouchstart="startEvent2" bindtouchend="endEvent2" class="list1">
+              <view>0320002612</view>
+              <view>庄洁洁</view>
+              <view>Zhuang Jiejie</view>
+            </view>
+            <view class="split-line"></view>
+          </view>
+          <view wx:if="{{flag<3}}">
+            <view bindtouchstart="startEvent3" bindtouchend="endEvent3" class="list1">
+              <view>0320002604</view>
+              <view>陈龙龙</view>
+              <view>Chen Longlong</view>
+            </view>
+            <view class="split-line"></view>
+          </view>
+          <view wx:if="{{flag<4}}">
+            <view bindtouchstart="startEvent4" bindtouchend="endEvent4" class="list1">
+              <view>0320002613</view>
+              <view>胡彬彬</view>
+              <view>Hu Binbin</view>
+            </view>
+            <view class="split-line"></view>
+          </view>
+          <view wx:if="{{flag<5}}">
+            <view bindtouchstart="startEvent5" bindtouchend="endEvent5" class="list1">
+              <view>0320002609</view>
+              <view>陈侨侨</view>
+              <view>Chen Qiaoqiao</view>
+            </view>
+            <view class="split-line"></view>
+          </view>
+          <view wx:if="{{flag<6}}">
+            <view bindtouchstart="startEvent6" bindtouchend="endEvent6" class="list1">
+              <view>0320002626</view>
+              <view>谢锴锴</view>
+              <view>Xie Kaikai</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </van-tab>
+    <van-tab title="缺课">
+      <button bindtap="sendMsg">你好</button>
+    </van-tab>
+    <van-tab title="统计"></van-tab>
+  </van-tabs>
+</view>

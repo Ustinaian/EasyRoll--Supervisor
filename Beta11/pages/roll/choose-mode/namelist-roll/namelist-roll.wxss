@@ -1,0 +1,24 @@
+.namelist{
+  display: flex;
+  flex-direction: column;
+}
+
+.list1{
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 2rpx;
+  align-items: center;
+  margin-left: 100rpx;
+  margin-right: 100rpx;
+  line-height: 60rpx;
+}
+
+.split-line{
+  display:flex;
+  margin-top: 60rpx;
+  height: 1rpx;
+  background-color: black;
+}
+
