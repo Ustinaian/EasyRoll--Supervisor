@@ -1,0 +1,18 @@
+<view class="info-container">
+	<van-field bind:change="onChange" label="昵称" class="weui-input" value="{{nickname}}" placeholder="请输入昵称" auto-focus clearable/>
+</view>
+
+<view class="btn-container">
+	<van-row>
+		<van-col>
+			<van-button
+				bind:click="confirm"
+				custom-class="btn1"
+				round
+				color="rgb(23,140,193)"
+			>
+			确定
+			</van-button>
+		</van-col>
+	</van-row>
+</view>

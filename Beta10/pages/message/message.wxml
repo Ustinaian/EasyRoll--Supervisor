@@ -1,0 +1,10 @@
+<view wx:for="{{msg}}" wx:for-item="item" wx:for-index="index" wx:key="item">
+  <van-swipe-cell right-width="{{70}}">
+    <van-cell-group>
+      <van-cell title="{{item.title}}" value="{{item.value}}" />
+    </van-cell-group>
+    <view slot="right">删除</view>
+  </van-swipe-cell>
+  
+</view>
+<button bindtap="sendMsg">你好</button>
