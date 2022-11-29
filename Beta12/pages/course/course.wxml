@@ -1,0 +1,29 @@
+<!-- <view wx:for="{{msg}}" wx:for-item="item" wx:for-index="index" wx:key="item">
+  <van-swipe-cell right-width="{{70}}">
+    <van-cell-group>
+      <van-cell title="{{item.title}}" value="{{item.value}}" />
+    </van-cell-group>
+    <view slot="right">删除</view>
+  </van-swipe-cell>
+  
+</view>
+<button bindtap="sendMsg">你好</button> -->
+<view wx:if="{{flag}}" bindtouchstart="startEvent" bindtouchend="endEvent">
+  <van-swipe-cell left-width="{{360}}" right-width="{{ 360 }}">
+    <view slot="left" class="left">未到课</view>
+    <van-cell-group>
+      <van-cell title-class="label" value-class="label" title="032002608" value="郭君濠" />
+    </van-cell-group>
+    <view slot="right" class="right">到课</view>
+  </van-swipe-cell>
+</view>
+<view>
+  <van-swipe-cell left-width="{{300}}" right-width="{{300}}">
+    <view slot="left"></view>
+    <van-cell-group>
+      <van-cell title-class="label" value-class="label" title="032002608" value="郭君濠" />
+    </van-cell-group>
+    <view slot="right"></view>
+  </van-swipe-cell>
+</view>
+

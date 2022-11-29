@@ -1,0 +1,17 @@
+<van-search
+  value="{{ value }}"
+  label="专业"
+  placeholder="请输入专业名称"
+  use-action-slot
+  bind:change="onChange"
+	bind:search="onSearch"
+>
+  <view slot="action" bind:tap="onSearch">搜索</view>
+</van-search>
+<view wx:for="{{arrays}}" wx:for-item="item" wx:for-index="index" wx:key="index" class="dpt">
+	<view id="{{index}}" bindtap="back">
+		<van-cell-group>
+			<van-cell title="{{item}}"/>
+		</van-cell-group>
+	</view>
+</view>
