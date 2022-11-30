@@ -1,0 +1,32 @@
+<van-tabs active="{{ active }}" bind:change="onChange">
+  <van-tab title="缺勤名单">
+	<view class="wrap">
+        <block wx:for="{{absenceNum}}" wx:key="*this">
+            <van-swipe-cell right-width="{{ 75 }}" left-width="{{ 75 }}" >
+            <van-cell-group inset>
+                <van-cell center title="{{absenceList[index].studentId}}" label="{{absenceList[index].studentName}}" />
+            </van-cell-group>
+            </van-swipe-cell>
+        </block>
+    </view>
+	</van-tab>
+  <van-tab title="请假名单">
+	<block wx:for="{{leaveNum}}" wx:key="*this">
+            <van-swipe-cell right-width="{{ 75 }}" left-width="{{ 75 }}" >
+            <van-cell-group inset>
+                <van-cell center   title="{{leaveList[index].studentId}}" label="{{leaveList[index].studentName}}" />
+            </van-cell-group>
+            </van-swipe-cell>
+        </block>
+	</van-tab>
+  <van-tab title="迟到名单">
+	<block wx:for="{{lateNum}}" wx:key="*this">
+            <van-swipe-cell right-width="{{ 75 }}" left-width="{{ 75 }}" >
+            <van-cell-group inset>
+                <van-cell center title="{{lateList[index].studentId}}" label="{{lateList[index].studentName}}" />
+            </van-cell-group>
+            </van-swipe-cell>
+        </block>
+	</van-tab>
+</van-tabs>
+
