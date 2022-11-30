@@ -1,0 +1,79 @@
+
+<van-toast id="van-toast" />
+<view>
+	<view class="title">
+		请选择点名时间
+	</view>
+	<view class="info-container">
+		<van-cell-group>
+			<van-cell
+			center
+			title="课程名称"
+			value="{{ name }}"
+			title-class="label"
+			/>
+		</van-cell-group>
+		<van-cell-group>
+			<van-cell
+			center
+			title="教师名称"
+			value="{{ professorName }}"
+			title-class="label"
+			/>
+		</van-cell-group>
+		<!-- 教室编号 -->
+		<van-cell-group>
+			<van-cell
+			center
+			title="教室编号"
+			value="{{ classroom }}"
+			title-class="label"
+			/>
+		</van-cell-group>
+		<!-- 开课周数 -->
+		<van-cell-group>
+			<van-cell center title="开课周数" bind:click="showPopup_startweek" value="{{startWeek}}" title-class="label"/>
+		</van-cell-group>
+		<!-- 结课周数 -->
+		<van-cell-group>
+			<van-cell center title="结课周数" bind:click="showPopup_endweek" value="{{endWeek}}" title-class="label"/>
+		</van-cell-group>
+		<van-cell-group>
+			<van-cell value="{{period}}" center title="上课时间" title-class="label"/>
+		</van-cell-group>
+		<!-- 开始时间 -->
+		<van-cell-group>
+			<van-cell center title="开始时间" bind:click="showPopup_startTime" value="{{startTime}}" is-link title-class="label"/>
+			<van-popup show="{{ show_startTime }}" position="bottom" custom-style="height: 50%;" bind:close="onClose">
+				<van-picker show-toolbar columns="{{ times }}" bind:cancel="cancel_startTime" bind:confirm="confirm_startTime" bind:change="onChange_startTime" />
+			</van-popup>
+		</van-cell-group>
+		<!-- 结束时间 -->
+		<van-cell-group>
+			<van-cell center title="结束时间" bind:click="showPopup_endTime" value="{{endTime}}" is-link title-class="label"/>
+			<van-popup show="{{ show_endTime }}" position="bottom" custom-style="height: 50%;" bind:close="onClose">
+				<van-picker show-toolbar columns="{{ times }}" bind:cancel="cancel_endTime" bind:confirm="confirm_endTime" bind:change="onChange_endTime" />
+			</van-popup>
+		</van-cell-group>
+		<!-- 发布签到按钮 -->
+		<view class="btn-container">
+			<van-button
+				bind:click="confirm"
+				custom-class="btn1"
+				round
+				color="rgb(23,140,193)"
+			>
+			发布签到
+			</van-button>
+			<van-button
+				bind:click="cancel"
+				custom-class="btn2"
+				round
+				plain
+				color="rgb(23,140,193)"
+			>
+			取消
+			</van-button>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,11 @@
+.cell{
+	height: 55px;
+}
+
+.title{
+	font-size: 40rpx;
+}
+
+.value{
+	font-size: 40rpx;
+}

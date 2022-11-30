@@ -1,0 +1,115 @@
+.wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* align-items: baseline; */
+}
+
+.van-tabs__scroll {
+  --tabs-nav-background-color: rgb(0,107,255,0.4);
+}
+.van-ellipsis {
+  color: white;
+  font-size: 1rem;
+}
+
+.van-cell {
+  flex-direction: column;
+  touch-action: none;
+  height: 25vh;
+  margin-top: 50rpx;
+  /* --cell-vertical-padding:30px; */
+  --cell-line-height:9vh
+}
+
+.van-cell__title{
+  /* flex: 0 !important; */
+  text-align: center !important;
+}
+.van-cell__value{
+  text-align: center !important;
+}
+/* .van-cell__label{
+  flex: 1;
+} */
+.delete {
+  margin-top: 50rpx;
+  height: 100%;
+  text-align: center;
+  width: 65px;
+  line-height: 25vh;
+  color: #fff;
+  background-color: rgb(6,176,37);
+}
+.sel {
+  margin-top: 50rpx;
+  height: 100%;
+  text-align: center;
+  width: 65px;
+  line-height: 25vh;
+  color: #fff;
+  background-color: #ec132d;
+}
+
+.statistics{
+  /* margin: 2vh; */
+  text-align: center;
+  height: 10vh;
+  line-height: 10vh;
+  background-color: white;
+  /* border-bottom: 1px solid #808080; */
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.overroll{
+  margin: 1vh auto;
+}
+
+/* 学号和拼音字体大小 */
+.van-cell {
+  --cell-font-size:1.3rem
+}
+/*拼音字体大小*/
+.van-cell__label{
+  --cell-label-font-size:1.8rem
+}
+.van-cell__label{
+  --cell-label-color:black
+}
+
+/*缺课界面样式*/
+.absencewrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.student {
+  width: 50vh;
+  margin-top: 3vh;
+  border: 1px solid #808080;
+  border-radius: 20rpx;
+  background-color: white;
+}
+
+.stuinfo {
+  height: 8vh;
+  line-height: 8vh;
+  text-align: center;
+  border-bottom: 1px solid #808080;
+}
+
+.btn {
+  width: 12.1vh;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-evenly;
+  /* height: 9vh; */
+}

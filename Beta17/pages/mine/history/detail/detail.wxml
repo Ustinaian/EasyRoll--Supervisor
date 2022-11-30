@@ -1,0 +1,100 @@
+<van-cell-group>
+	<van-cell
+		title-class="title"
+		value-class="value"
+		center
+		custom-class="cell"
+		title="课程名称"
+		value="{{detail.courseName}}"
+	></van-cell>
+</van-cell-group>
+<van-cell-group>
+	<van-cell
+	title-class="title"
+		value-class="value"
+		center
+		custom-class="cell"
+		title="课程阶段"
+		value="{{detail.period}}"
+	></van-cell>
+</van-cell-group>
+<van-cell-group>
+	<van-cell
+	title-class="title"
+		value-class="value"
+		center
+		custom-class="cell"
+		title="课程时间"
+		value="{{detail.date}}"
+	></van-cell>
+</van-cell-group>
+<van-cell-group>
+	<van-cell
+	title-class="title"
+		value-class="value"
+		center
+		custom-class="cell"
+		title="总人数"
+		value="{{detail.enrollNum}}"
+	></van-cell>
+</van-cell-group>
+<van-cell-group>
+	<van-cell
+	title-class="title"
+		value-class="value"
+		center
+		custom-class="cell"
+		title="到课人数"
+		value="{{detail.attendanceNum}}"
+	></van-cell>
+</van-cell-group>
+<van-cell-group>
+	<van-cell
+	title-class="title"
+		value-class="value"
+		center
+		custom-class="cell"
+		title="缺课人数"
+		value="{{detail.absenceNum}}"
+	></van-cell>
+</van-cell-group>
+<van-cell-group>
+	<van-cell
+	title-class="title"
+		value-class="value"
+		center
+		custom-class="cell"
+		title="请假人数"
+		value="{{detail.leaveNum}}"
+	></van-cell>
+</van-cell-group>
+<van-cell-group>
+	<van-cell
+	title-class="title"
+		value-class="value"
+		center
+		custom-class="cell"
+		title="迟到人数"
+		value="{{detail.lateNum}}"
+	></van-cell>
+</van-cell-group>
+<van-cell-group>
+	<van-cell
+	title-class="title"
+		value-class="value"
+		center
+		custom-class="cell"
+		title="到课率"
+		value="{{detail.attendanceRate}}"
+	></van-cell>
+</van-cell-group>
+<van-cell-group>
+	<van-cell
+	title-class="title"
+		value-class="value"
+		center
+		custom-class="cell"
+		title="督导人员"
+		value="{{detail.supervisorName}}"
+	></van-cell>
+</van-cell-group>

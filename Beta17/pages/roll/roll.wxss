@@ -1,0 +1,102 @@
+.Title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0,107,255,0.4);
+  color: white;
+  border-radius: 18rpx;
+  font-weight: 600;
+  border-bottom: 2px solid rgb(139, 136, 128);
+  height: 100rpx;
+  font-size: 40rpx;
+}
+
+.course{
+  display: flex;
+  width: 700rpx;
+  height: 250rpx;
+  margin: 60rpx auto;
+  justify-content: center;
+  border-radius: 50rpx;
+  background: linear-gradient(to top left,  rgb(8, 152, 160,0.7)55%, rgba(83, 203, 209), rgb(8,204,216,0.7));
+}
+
+.course:nth-child(2n+1){
+  background: linear-gradient(to bottom right,  rgba(188,156,118,0.75)55%, rgba(188,158,122), rgb(188,158,122,0.7));
+}
+
+.course:nth-child(2n){
+  background: linear-gradient(to bottom right,  rgba(11,210,223,0.75)55%, rgba(9,205,218), rgb(9,205,218,0.7));
+}
+
+.course:nth-child(3n+1){
+  background: linear-gradient(to bottom right,  rgba(59,164,242,0.75)55%, rgba(49,152,240), rgb(40,152,244,0.7));
+}
+
+.course:nth-child(3n+2){
+  background: linear-gradient(to bottom right,  rgba(253,164,134,0.75)55%, rgb(250, 148, 125), rgb(250, 148, 125,0.7));
+}
+
+.course_title{
+  display: flex;
+  position: absolute;
+  margin-top: 30rpx;
+  justify-content: center;
+  width: 630rpx;
+  height: 50rpx;
+  font-size: 1.3em;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: rgb(89,159,255); */
+}
+
+.course_info{
+  display: flex;
+  margin-top: 120rpx;
+  width: 630rpx;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.classroom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30rpx;
+  height: 100rpx;
+  width: 250rpx;
+  font-size: 30rpx;
+  color: rgb(253, 253, 253);
+}
+
+.time{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-left: 375rpx;
+  height: 100rpx;
+  width: 250rpx;
+  color:white;
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.bottom-button {
+  width: 160px;
+  height: 40px;
+}
+
+.van-popup{
+  display: flex;
+  width: 50vh;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  flex-direction: column;
+}
+.classinfo{
+  width: 20vh;
+  margin-top: 2vh;
+}

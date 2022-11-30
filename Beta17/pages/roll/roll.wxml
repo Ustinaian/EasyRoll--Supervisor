@@ -1,0 +1,30 @@
+<view>
+  <view class="Title">我的点名
+  <van-icon name="setting-o" bind:click="toManage" size='1.5em' custom-style="position:absolute; right:50rpx" close-on-click-overlay="true"/>
+  </view>
+
+  <van-popup show="{{ show }}" bind:close="onClose" round>
+    <view class="classinfo">课程名称：{{curCourse}}</view>
+    <view class="classinfo">教室：{{curclassroom}}</view>
+    <view class="classinfo">教师：{{curTeacher}}</view>
+    <view class="classinfo">节数：{{curPeriod}}</view>
+    <view class="classinfo">周数：{{curweek}}</view>
+    <button type="primary" class="classinfo" bindtap="beginroll">开始点名</button>
+    <button type="primary" class="classinfo" bindtap="returnindex">返回</button>
+  </van-popup>
+  <block wx:if="{{coursenum>0}}" wx:for="{{coursenum}}" wx:key="*this">
+    <view class="course" is-link bindtap="showPopup" data-index="{{index}}">
+    <view class="course_title">{{courses[index].name}}</view>
+    <view class="course_info">
+      <view class="classroom">{{courses[index].classroom}}</view>
+      <view class="time">{{courses[index].period}}</view>
+    </view>
+  </view>
+  </block>
+
+  <block wx:if="{{coursenum==0}}">
+    <van-empty description="您还没有课程信息，点击添加新课程">
+      <van-button icon="plus" plain round type="info" bindtap="addCourse">添加课程</van-button>
+    </van-empty>
+  </block>
+</view>

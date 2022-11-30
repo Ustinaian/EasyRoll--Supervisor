@@ -1,0 +1,6 @@
+<view wx:for="{{Data}}" wx:key="index">
+  <van-cell-group>
+    <van-cell data-index="{{index}}" bind:click="click" url="./detail/detail" custom-class="cell" center is-link title="{{item.courseName}}"
+    title-class="title" value="{{item.date}}" />
+  </van-cell-group>
+</view>
