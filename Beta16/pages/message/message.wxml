@@ -1,0 +1,35 @@
+<van-search
+  value="{{ value }}"
+  placeholder="搜索"
+  use-action-slot
+  input-align="center"
+  bind:change="onChange"
+	bind:search="onSearch"
+>
+</van-search>
+<view wx:for="{{msg}}" wx:key="id">
+  <van-swipe-cell
+  id="{{index}}"
+  right-width="{{ 80 }}"
+  async-close
+  bind:close="onClose"
+  bind:click="onClick"
+  data-index="{{index}}"
+  data-data="{{item.data}}"
+  >
+    <van-cell-group>
+      <van-cell title-width="245px" label="{{item.content}}" value="{{item.time}}">
+        <view slot="icon" class="img-container">
+          <image class="img" mode="aspectFit" style="width: 50px;height: 50px;"  src="{{item.image}}"></image>
+        </view>
+        <view slot="title">
+          {{item.data.rejectors}}
+        </view>
+      </van-cell>
+    </van-cell-group>
+    <view slot="right" class="right">删除</view>
+  </van-swipe-cell>
+</view>
+<van-dialog id="van-dialog" confirm-button-color="black"
+  cancel-button-color="red">
+</van-dialog>

@@ -1,0 +1,7 @@
+.cell{
+	height: 80px;
+}
+
+.title{
+	font-size: large;
+}

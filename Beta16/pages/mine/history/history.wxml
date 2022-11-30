@@ -1,0 +1,5 @@
+<view wx:for="{{Data}}" wx:key="index">
+  <van-cell-group>
+    <van-cell url="" custom-class="cell" center is-link title="{{item.courseName}}" value="{{item.date}}" />
+  </van-cell-group>
+</view>

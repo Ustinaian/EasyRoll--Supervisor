@@ -1,0 +1,9 @@
+<view class="title">
+  请选择您的身份
+</view>
+<view class="title-container">
+  <van-cell-group custom-class="cell">
+    <van-cell center url="./student/student" title="督导队员" title-class="label" is-link />
+    <van-cell center url="./teacher/teacher" title="教师/辅导员" title-class="label" is-link/>
+  </van-cell-group>
+</view>
