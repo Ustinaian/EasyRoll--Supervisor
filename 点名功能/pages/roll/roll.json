@@ -1,6 +1,6 @@
 {
-  "usingComponents": {
-    "popup_roll":"/components/popup_roll/popup_roll"
-  },
-  "navigationBarTitleText": "点名"
+  "usingComponents": {},
+  "navigationStyle":"custom",
+  "navigationBarTextStyle":"white"
 }
+
