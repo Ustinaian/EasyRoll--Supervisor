@@ -1,0 +1,15 @@
+<view class="wx-popup" style="margin:-{{windowHeight/2}}px 0 0 -{{windowWidth/2}}px" hidden="{{flag}}">
+  <view class='popup-container'>
+    <view class="wx-popup-con" >
+      <text>{{name}}</text>
+      <text>{{classroom}}</text>
+      <text>{{teacher}}</text>
+      <text>{{time}}</text>
+      <text>{{week}}</text>
+    </view>
+    <view class="btn">
+      <button class="roll_btn" type="primary" bindtap="roll_btn">开始点名</button>
+      <button class="back_btn" type="warn" bindtap="hidePopup">返回</button>
+    </view>
+  </view>
+</view>

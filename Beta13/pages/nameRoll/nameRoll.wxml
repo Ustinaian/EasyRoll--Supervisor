@@ -1,0 +1,6 @@
+<view class="video_box">
+ <view bindtouchend="touchEnd" id="myVideo{{index}}" animation="{{animation}}" bindtouchstart="touchStart" bindtouchmove="touchMove" class="video_list" wx:for="{{video_list}}" data-index="{{index}}" wx:key="index" >
+  <text style="color:red;font-size:30px;display:block;">{{index}}</text>
+  <video custom-cache="{{false}}" src="{{item.video_src}}" vslide-gesture-in-fullscreen="{{false}}" direction = '{{0}}' enable-progress-gesture="{{false}}" show-fullscreen-btn="{{false}}" object-fit="cover"></video>
+ </view>
+</view>

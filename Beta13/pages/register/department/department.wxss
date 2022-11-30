@@ -1,0 +1,5 @@
+.dpt{
+	display: flex;
+	flex-direction: column;
+	font-size: large;
+}

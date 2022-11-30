@@ -1,0 +1,42 @@
+
+<view class="courseContainer">
+  <!-- 日期区域 -->
+  <view class="date">
+    <view class="month">
+    </view>
+    <view class="day">
+      <view class="week {{todayMonth == monthNum && day == item?'todayDate':''}}" wx:for="{{nowDay}}" wx:key="index">
+        <view class="week-item">周{{week[index]}}</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 课表区域 -->
+  <scroll-view scroll-x="false" scroll-y class="courseScroll">
+    <view class="courseContent">
+      <view class="courseTime">
+        <view wx:for="{{11}}" wx:key="index" class="left">
+          <view class="number">{{item+1}}</view>
+        </view>
+      </view>
+      <view class="course">
+        <view wx:for="{{wList}}" wx:for-index="index" wx:key="index" class="kcb-item" style="margin-left:{{item.isToday!=7?(item.isToday)*100:0}}rpx;margin-top:{{(item.period-1)*110+4}}rpx;height:{{item.classNumber*110 - 8}}rpx;">
+          <view data-index="{{index}}" bindtap="click" class="smalltext" style="background-color:{{colorArrays[item.flag]}};">
+            <view class="smalltextName">{{item.value}}</view>
+          </view>
+        </view>
+      </view>
+      
+    </view>
+    <view class="btn-container">
+      <van-button
+        bind:click="confirm"
+        custom-class="btn1"
+        round
+        color="rgb(26,141,193)"
+      >
+      确认
+      </van-button>
+    </view>
+  </scroll-view>
+</view>
