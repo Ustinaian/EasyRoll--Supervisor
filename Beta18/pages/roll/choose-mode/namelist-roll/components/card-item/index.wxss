@@ -1,0 +1,17 @@
+.id-text {
+  font-size: 48rpx;
+}
+
+.name-text {
+  font-size: 64rpx;
+}
+
+.mp-swipe-card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 20rpx;
+}

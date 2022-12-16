@@ -1,0 +1,22 @@
+page{
+  background-color: rgb(219, 216, 216);
+}
+
+.msg{
+  display: flex;
+  flex-direction: column;
+  height: 200rpx;
+  margin-top: 100rpx;
+  padding: 20rpx;
+  padding-right: 100rpx;
+  background-color: white;
+  border-radius: 50rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.custom-class {
+  height: 300rpx;
+  width: 300rpx;
+}

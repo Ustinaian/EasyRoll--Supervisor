@@ -1,0 +1,69 @@
+<van-toast id="van-toast"/>
+<van-tabs active="{{ active }}" bind:change="onChange">
+  <van-tab title="未点{{remaindernum}}人" name="a">
+      <view class="swipe-card-container" wx:if="{{remaindernum}}">
+        <view class="placeholder-0"></view>
+        <view class="placeholder-1"></view>
+        <view class="placeholder-2"></view>
+        <mp-swipe-card
+          bind:click="handleClickCard"
+          push-list="{{namelist}}"
+          bind:swipeoutleft="handleSwipeOutleft"
+          bind:swipeoutright="handleSwipeOutright"
+          generic:mp-swipe-card-item="card-item"   
+        >
+          <!-- <view>{{item}}</view>   -->
+        </mp-swipe-card>
+    </view>
+    <van-empty description="无未点名单" image="https://img.yzcdn.cn/vant/custom-empty-image.png" wx:if="{{remaindernum==0&&totalstu>0}}"/>
+  </van-tab>
+  <van-tab title="缺课{{absencenum_1}}人" name="b">
+    <view class="absencewrap">
+        <block wx:for="{{absencenum}}" wx:key="*this" wx:if="{{absenceshow[index]}}">
+          <view class="student">
+            <view class="stuinfo">{{absencelist[index].id}}{{absencelist[index].name}}</view>
+            <view class="btns">
+              <button class="btn" bindtap="belate" data-index="{{index}}">迟到</button>
+              <button class="btn" bindtap="bearrival" data-index="{{index}}">到课</button>
+              <button class="btn" bindtap="beleave" data-index="{{index}}">请假</button>
+              <button class="btn" bindtap="beabsence" data-index="{{index}}">缺课</button>
+            </view>
+          </view>
+        </block>
+    </view>
+  </van-tab>
+  <van-tab title="统计" name="c">
+    <block wx:if="{{absencenum_1==0&&remaindernum==0}}">
+        <view class="wrap">
+        <van-divider />
+        <view class="statistics">总人数：{{enrollNum}}人</view>
+        <view class="statistics">到课人数（包含迟到）：{{attendanceNum}}</view>
+        <view class="statistics">迟到人数：{{lateNum}}</view>
+        <view class="statistics">缺课人数：{{absenceNum}}</view>
+        <view class="statistics">请假人数：{{leaveNum}}</view>
+        <van-divider />
+        </view>
+        <view class="button">
+          <van-button type="info" round class="overroll" bind:click="lookresult">查看统计结果</van-button>
+          <van-button type="info" round class="overroll" bind:click="exportdata">数据导出</van-button>
+          <van-button type="info" round class="overroll" bind:click="endroll">结束点名</van-button>
+        </view>
+        <!-- 数据导出选项 -->
+        <van-action-sheet
+        show="{{ exportdatashow }}"
+        actions="{{ actions }}"
+        cancel-text="取消"
+        bind:cancel="onClose"
+        />
+    </block>
+
+    <block wx:if="{{absencenum_1>0 || remaindernum>0}}">
+      <van-empty
+      class="custom-image"
+      image="https://img.yzcdn.cn/vant/custom-empty-image.png"
+      description="完成点名后会自动出现哦"
+      />
+    </block>
+    <van-toast id="van-toast" />
+  </van-tab>
+</van-tabs>
